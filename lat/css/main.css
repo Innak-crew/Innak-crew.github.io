@@ -236,6 +236,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .LAT-border-dark-grey,.LAT-hover-border-dark-grey:hover,.LAT-border-dark-gray,.LAT-hover-border-dark-gray:hover{border-color:#616161!important}
 .LAT-border-pale-red,.LAT-hover-border-pale-red:hover{border-color:#ffe7e7!important}.LAT-border-pale-green,.LAT-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .LAT-border-pale-yellow,.LAT-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.LAT-border-pale-blue,.LAT-hover-border-pale-blue:hover{border-color:#e7ffff!important}
-@media (max-width: 550px) {
-  iframe {height: 1000px;}
+@media (max-width: 585px) {
+  iframe {height: 900px;}
 	
