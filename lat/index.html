@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://ksrce.LATspaces.com/Project-LAT/home.html# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LAT</title>
+
+   
+    <link rel="shortcut icon" type="image/png" href="https://www.ksrceresults.com/assets/img/logo.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/flipcard.css">
+	
+	<script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  
+  <body class="LAT-light-grey  ">
+ 
+  
+  
+  
+    <!-- Top container -->
+    <div class="LAT-bar LAT-top LAT-black LAT-large" style="z-index: 4">
+      <button class="LAT-bar-item LAT-button LAT-hide-large LAT-hover-none LAT-hover-text-light-grey" onclick="LAT_open();">
+       <!-- menu button -->
+	  <i class="fa fa-bars"></i>
+      </button>
+      <b class="LAT-bar-item text-light">LAT</b>
+    </div>
+	
+	
+	
+    <!-- Sidebar/menu -->
+    <nav class="LAT-sidebar LAT-collapse LAT-white LAT-animate-left" style="z-index: 3; width: 300px; display: none;" id="mySidebar">
+      <br>
+      <div class="LAT-container LAT-row">
+        <div class="LAT-col s4">
+          <img src="https://ssd.ksrce.ac.in/assets/img/student-photo/1647339781-1115132229.jpg" style="width: 60px; border-radius:50%;border-color:blue;">
+        </div>
+        <div class="LAT-col s8 LAT-bar">
+          <span>Welcome, <strong>Dayanidi GV</strong></span><br>
+          <a href="https://mail.google.com/mail/" target="_blank" class="LAT-bar-item LAT-button"><i class="fa fa-envelope"></i></a>
+          <a href="#" class="LAT-bar-item LAT-button" onclick="profile()"><i class="fa fa-user"></i></a>
+        </div>
+      </div>
+      <hr>
+	  <div class="row">
+      <div class="col-sm-12">
+       <ul class="navbar-nav text-center">
+       <li class="bg-dark" id="listdashboard">
+         <a class="nav-link " href="#" onclick="dashboard()">Dashboard</a>
+       </li>
+       <li class="nav-item" id="listprofile">
+         <a class="nav-link" href="#" onclick="profile()">Profile</a>
+       </li>
+       <li class="nav-item" id="listseflearn">
+         <a class="nav-link" href="#" onclick="selflearn()">Self Learn</a>
+       </li>
+       <li class="nav-item" id="listassessment">
+         <a class="nav-link" href="#" onclick="assessment()">Assessment</a>
+       </li>
+       <li class="nav-item" id="listtryout">
+         <a class="nav-link" href="#" onclick="tryout()">Try Out</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Logout</a>
+       </li>
+     </ul>
+      </div>
+    </nav>
+
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="LAT-overlay LAT-hide-large LAT-animate-opacity" onclick="LAT_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !ALL PAGE CONTENT! -->
+    <div class="LAT-main" style="margin-left: 300px; margin-top: 43px">
+      
+	 
+	 <!-- !DASHBOARD PAGE CONTENT! -->
+	<div class="card" id="dashboard" style="display:;">
+        <h4 class="text-center text-primary card-header">DASHBOARD</h4>
+		<iframe src="/views/dashboard.html" width="100%" height="500px">
+		<p>Your browser does not support iframes.</p>
+		</iframe>
+			</div>
+	  
+	 <!-- !USER PROFILE PAGE CONTENT! -->  
+	<div class="card" id="profile" style="display:none;">
+        <h4 class="text-center text-primary card-header">USER PROFILE</h4>
+        <div class="card-body ">
+		<ul class="nav navbar-nav ul" >
+			<li><b>Name:</b> <span>Dayanidi GV</span><br></li>
+			<li><b>Roll no:</b> <span>73152121015</span></li>
+			<li><b>Email:</b> <span>dayanidigv954@gmail.com</span><br></li>
+			<li><b>Date of Birth:</b> <span>09/05/2004</span><br></li>
+			<li><b>Gender:</b> <span>Male</span><br></li>
+			<li><b>Graduation:</b> <span>UG</span><br></li>
+			<li><b>Department:</b> <span>Btech Information Teachnology</span><br></li>
+			<li><b>Batch:</b> <span>2021-2025</span><br></li>
+			<li><b>section:</b> <span>A</span><br></li>
+			<li><b>Address:</b> <span>Pasuvanatham patty,Mookuthipalaiyam (PO),Salem (DT) </span><br></li>
+			<li><b>Pin code:</b> <span>636203</span><br></div></li>
+		</ul>
+		<div class="text-center">
+			<button class="btn btn-primary center border rounded  shadow-lg ">Update</button>
+		</div><br><br>
+	
+	  </div>  
+	  
+	  
+	   <!-- !SELF LEARN PAGE CONTENT! -->  
+<div class="card" id="selflearn" style="display:none;">
+        <h4 class="text-center text-primary card-header">SELF LEARN</h4>
+		<h1 class="text-center">Self-Learn Programming Sites</h1>
+  <p class="text-center">A collection of popular websites for self-learning programming skills</p>
+		
+    <div class="bg-light card-body">
+    			<div class="row">
+				
+				
+    				<div class="col-sm-4">
+    					<div class="flip-card ft">
+							<div class="flip-card-inner">
+								<div class="flip-card-front border rounded bg-light shadow-lg p-3 mb-5 ">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" width="100%" height="100%" >
+								</div>
+								<div class="flip-card-back border rounded bg-light shadow-lg p-3 mb-5 ">
+									<h1 class="text-danger">C</h1>
+									<ul class="list-group list-group-flush">
+											<li class="list-group-item ">
+											<a href="https://www.geeksforgeeks.org/c-programming/" target="_blank">GeeksforGeeks</a>
+											</li>
+											<li class="list-group-item">
+											<a href=" https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank">TutorialsPoint</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.cprogramming.com/" target="_blank">cprogramming.com</a>
+											</li>
+											<li class="list-group-item">
+											<a href="http://www.learn-c.org/" target="_blank">Learn-C.org</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.LATschools.com/c/" target="_blank">W3Schools</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.programiz.com/c-programming" target="_blank">Programiz</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.javatpoint.com/c-programming-language-tutorial" target="_blank">Javatpoint</a>
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+    				</div>
+					
+					
+    				<div class="col-sm-4">
+    					<div class="flip-card ft">
+							<div class="flip-card-inner">
+								<div class="flip-card-front border rounded bg-light shadow-lg p-3 mb-5 "style="text-align: centre;">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100%" height="100%">
+								</div>
+								<div class="flip-card-back border rounded bg-light shadow-lg p-3 mb-5 ">
+									<h1 class="text-danger">Python</h1>
+									<ul class="list-group list-group-flush">
+											<li class="list-group-item ">
+											<a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">TutorialsPoint</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.datacamp.com/courses/intro-to-python-for-data-science" target="_blank">DataCamp</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.coursera.org/courses?query=python" target="_blank">Coursera</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.LATschools.com/python/" target="_blank">W3Schools</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.programiz.com/python-programming" target="_blank">Programiz</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.javatpoint.com/python-tutorial" target="_blank">Javatpoint</a>
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+    				</div>
+					
+					
+    				<div class="col-sm-4">
+    					<div class="flip-card ft">
+							<div class="flip-card-inner">
+								<div class="flip-card-front border rounded bg-light shadow-lg p-3 mb-5 ">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1024px-ISO_C%2B%2B_Logo.svg.png" width="100%" height="100%">
+								</div>
+              
+								<div class="flip-card-back border rounded bg-light shadow-lg p-3 mb-5 ">
+									<h1 class="text-danger">C++</h2>
+									<ul class="list-group list-group-flush">
+											<li class="list-group-item ">
+											<a href="https://www.geeksforgeeks.org/cpp-tutorial/" target="_blank">GeekForGeeks</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.tutorialspoint.com/python/index.htm" target="=_blank">TutorialsPoint</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.datacamp.com/courses/intro-to-python-for-data-science"target="=_blank">DataCamp</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.coursera.org/courses?query=python" target="=_blank">Coursera</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.W3schools.com/cpp/"target="=_blank">W3Schools</a>
+											</li>
+											<li class="list-group-item">
+											<a  href="https://www.programiz.com/C++-programming"  target="=_blank">Programiz</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.javatpoint.com/cpp-tutorial" target="=_blank">Javatpoint</a>
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+    				</div>
+					
+					
+    				<div class="col-sm-4">
+    					<div class="flip-card ft">
+							<div class="flip-card-inner">
+								<div class="flip-card-front border rounded bg-light shadow-lg p-3 mb-5 ">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" width="100%" height="100%" >
+								</div>
+								<div class="flip-card-back border rounded bg-light shadow-lg p-3 mb-5 ">
+									<h1 class="text-danger">C sharp</h2>
+									<ul class="list-group list-group-flush">
+											<li class="list-group-item ">
+											<a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">TutorialsPoint</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.datacamp.com/courses/intro-to-python-for-data-science" target="_blank">DataCamp</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.coursera.org/courses?query=python" target="_blank">Coursera</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.LATschools.com/python/" target="_blank">LATSchools</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.programiz.com/python-programming" target="_blank">Programiz</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.javatpoint.com/python-tutorial" target="_blank">Javatpoint</a>
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+    				</div>
+					
+					
+    				<div class="col-sm-4">
+    					<div class="flip-card ft">
+							<div class="flip-card-inner">
+								<div class="flip-card-front border rounded bg-light shadow-lg p-3 mb-5 ">
+									<img src="https://dayanid.github.io/LAT/PngItem_1746660.png" width="100%" height="100%" >
+								</div>
+								<div class="flip-card-back border rounded bg-light shadow-lg p-3 mb-5 ">
+									<h1 class="text-danger">Java</h2>
+									<ul class="list-group list-group-flush">
+											<li class="list-group-item ">
+											<a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">TutorialsPoint</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.datacamp.com/courses/intro-to-python-for-data-science" target="_blank">DataCamp</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.coursera.org/courses?query=python" target="_blank">Coursera</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.LATschools.com/python/" target="_blank">LATSchools</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.programiz.com/python-programming" target="_blank">Programiz</a>
+											</li>
+											<li class="list-group-item">
+											<a href="https://www.javatpoint.com/python-tutorial" target="_blank">Javatpoint</a>
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+    			
+				</div>
+    				
+</div>
+
+
+</div>
+
+
+		<!-- !TRY OUT PAGE CONTENT! -->  
+<div class="card bg-dark" id="tryout" style="display:none;">
+	   <h4 class="text-center text-primary card-header">TRY OUT</h4>
+		  <div class="row card-body">
+            <div class="col-sm-8">
+                <div class="card bg-dark">
+                    <div class="card-body bg-dark  ">
+					<div id="question text-secondary">
+
+                      <label>Code</label>  <select id="language-select" class="custom-select col-sm-3 bg-dark text-secondary">
+							<option value="">select</option>
+                            <option value="python">Python</option>
+							<option value="java">Java</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="cs">C#</option>
+                        </select>
+						
+						
+                       <label>Theme</label> <select id="theme-select" class="custom-select col-sm-3 bg-dark text-secondary">
+							<option value="ace/theme/ambiance">Ambiance</option>
+							<option value="ace/theme/chaos">Chaos</option>
+							<option value="ace/theme/chrome">Chrome</option>
+							<option value="ace/theme/clouds">Clouds</option>
+							<option value="ace/theme/clouds_midnight">Clouds Midnight</option>
+							<option value="ace/theme/cobalt">Cobalt</option>
+							<option value="ace/theme/crimson_editor">Crimson Editor</option>
+							<option value="ace/theme/dawn">Dawn</option>
+							<option value="ace/theme/dracula">Dracula</option>
+							<option value="ace/theme/dreamweaver">Dreamweaver</option>
+							<option value="ace/theme/eclipse">Eclipse</option>
+							<option value="ace/theme/github">Github</option>
+							<option value="ace/theme/gob">Gob</option>
+							<option value="ace/theme/gruvbox">Gruvbox</option>
+							<option value="ace/theme/idle_fingers">Idle Fingers</option>
+							<option value="ace/theme/iplastic">Iplastic</option>
+							<option value="ace/theme/katzenmilch">Katzenmilch</option>
+							<option value="ace/theme/kr_theme">kr theme</option>
+							<option value="ace/theme/kuroir">Kuroir</option>
+							<option value="ace/theme/merbivore">Merbivore</option>
+							<option value="ace/theme/merbivore_soft">Merbivore Soft</option>
+							<option value="ace/theme/monokai">Monokai</option>
+							<option value="ace/theme/nord_dark">Nord Dark</option>
+							<option value="ace/theme/pastel_on_dark">Pastel on Dark</option>
+							<option value="ace/theme/solarized_dark">Solarized Dark</option>
+							<option value="ace/theme/solarized_light">Solarized Light</option>
+							<option value="ace/theme/terminal">Terminal</option>
+							<option value="ace/theme/textmate">Textmate</option>
+							<option value="ace/theme/tomorrow">Tomorrow</option>
+							<option value="ace/theme/tomorrow_night">Tomorrow Night</option>
+							<option value="ace/theme/tomorrow_night_blue">Tomorrow Night Blue</option>
+							<option value="ace/theme/tomorrow_night_bright">Tomorrow Night Bright</option>
+							<option value="ace/theme/tomorrow_night_eighties">Tomorrow Night 80s</option>
+							<option value="ace/theme/twilight">Twilight</option>
+							<option value="ace/theme/vibrant_ink">Vibrant Ink</option>
+							<option value="ace/theme/xcode">Xcode</option>
+</select>
+
+</div>
+                    
+                
+                        <div id="editor" class="text-xl" style="height:517px;" ></div>
+                        <pre class="text-secondary bg-dark">Letter count: <span id="letter-count">0</span>      Line count: <span id="line-count">0</span></pre>
+
+                    </div>
+                     </div>
+            </div>
+            <div class="col-sm-4 " >
+				<div class="card bg-dark">
+                    <div class="card-header ">
+                        Input:
+                    </div>
+                    <div class="card-body ">
+                        <textarea id="input-area" class="form-control bg-secondary text-light" style="height:50px;"></textarea>
+                    </div>
+                </div>
+              
+                <div class="card bg-dark">
+                    <div class="card-header ">
+                        Output:     <button id="run-button" class="btn btn-primary mr-0">Run</button>
+                    </div>
+                    <div class="card-body ">
+                        <textarea id="output-area" class="form-control bg-secondary text-light" style="height:320px;" readonly >></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+	</div>	
+
+       <script src="https://dayanid.github.io/script.js"></script>	
+	
+
+
+	 <!-- !ASSESSMENT PAGE CONTENT! -->
+	  <div class="card" id="assessment" style="display:none;">
+		<h4 class="text-center text-primary card-header">ASSESSMENT</h4>
+    
+	<h2>Level 1:</h2>
+	<div class="text-right"><a href="https://dayanid.github.io/" target="_block"><button class="btn btn-primary center">Take Risk</button></a></div>
+   
+   
+<div class="card-body ">
+		<h4 class="text-success">Program Question</h4>
+		<ul class="nav navbar-nav ul  list-group-item">
+          <li >Write a code to print hello world.</li>
+          <li >Write a code to add two numbers.</li>
+          <li>Write a code to illustrate arithmetic operations (+, -, *, /).</li>
+          <li>Write a code to find the given number is positive or negative.</li>
+          <li>Write a code to Check if a Number is Odd or Even.</li>
+          <li>Write a code to find the maximum of two numbers.</li>
+          <li>Write a code to check prime numbers or not.</li>
+          <li>Write a code factorial program.</li>
+          <li>Write a code to calculate the square root of a given number.</li>
+          <li>Write a code to calculate the area of a triangle.</li>
+          <li>Write a code to check Armstrong number.</li>
+          <li>Write a code to check leap year or not.</li>
+          <li>Write a code to display a multiplication table using for loop.</li>
+          <li>Write a code to find a Fibonacci of a number.</li>
+          <li>Write a code to find GCD of two numbers.</li>
+		  <li>Write a code to swap two variables.</li>
+          <li>Write a code to find minimum of two numbers.</li>
+          <li>Write a code to add two numbers without using third variable.</li></ul>
+</div>
+		<div class="text-right">
+			<button  class="btn btn-primary  shadow-lg"  onclick="alert('complete level 1st')">Next level &gt </button>
+		</div><br><br>
+	  </div>  
+   
+   <!-- !FOOTER PAGE CONTENT! -->
+   <footer class="card text-center bg-light text-secondary">
+        <pre class="text-secondary">LAT - Version 1.01<br><br>Organized by <a href="javascript:void(0);">Dr.G.Singaravel</a> and <a href="https://www.pkaveen.in" target="_blank">Kaveen Prasannamoorthy.</a><br>Designed and Developed by <a href="javascript:void(0);">Innak Team.</a></pre>
+</footer> 
+	
+  </div>
+
+		
+	
+	
+ 
+  </div>
+							
+</div>
+	  
+</div>
+</div>
+</div>
+
+</div>
+		  
+<!-- !DASHBOARD Percentage Function!  
+<script>
+
+
+
+$(function() {
+
+//DASHBOARD Percentage Function...
+  $(".progress").each(function() {
+	//GET DASHBOARD Percentage Value ...
+    var value = $(this).attr('data-value');
+    var left = $(this).find('.progress-left .progress-bar');
+    var right = $(this).find('.progress-right .progress-bar');
+
+    if (value > 0) {
+      if (value <= 50) {
+        right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+      } else {
+        right.css('transform', 'rotate(180deg)')
+        left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+      }
+    }
+
+  })
+//Calculate Percentage to degrees Function
+  function percentageToDegrees(percentage) {
+    return percentage / 100 * 360
+  }
+
+});
+
+
+</script>
+	  -->
+
+  
+  
+ 
+	<!-- !MESSAGE-BOX CONTENT! -->
+	  <div class=" d-flex justify-content-center align-items-center position-fixed " id="welcome-message" style="display:none; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);" >
+		<div class="bg-white p-5 modal-header border rounder">
+		<div class="row">
+			<div class="col-sm-10">
+				<q class="text-left ">Welcome to the Program Skills Development</q>
+			</div>
+			<div class="col-sm-2">
+				<button type="button" onclick='document.getElementById("welcome-message").className = "";document.getElementById("welcome-message").style.display("none")' class="btn btn-light border text-primary text-right">X</button>
+			</div>
+		</div>
+</body>
+</html>
