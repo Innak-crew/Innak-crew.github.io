@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" type="image/png" href="./LAT - Login_files/logo.png">
+    <title>LAT-Login</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/loginside.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head><body class="container">
+    <a href="https://innak-crew.github.io/lat/" id="mainpage"></a>
+    <div class="box">
+      <form >
+        <h1 style="text-align: center">
+          <img src="./LAT - Login_files/logo.png" alt="" width="50%">
+        </h1>
+        <h3 style="text-align: center; margin-top: -15px" class="titl">
+          Logical Assessment Test
+        </h3>
+        <div class="title">Login</div>
+		<p id="message" class="alert alert-danger" style="display:none;"></p>
+		<div class="row"> 
+		
+			<div class="col-sm-12">
+				<div class="input-box underline">
+					<select id="Mode" required="" >
+						<option value="">Select-User-Mode</option>
+						<option value="main">Main </option>
+						<option value="admin">Admin</option>
+						<option value="hod">HoD</option>
+						<option value="faculty ">Faculty</option>
+						<option value="student">Student</option>
+					</select>
+					<div class="underline"></div>
+				</div>
+			</div>
+		 
+			<div class="col-sm-12">
+				<div class="input-box underline">
+						<input type="text" placeholder="Enter Your Email" required="" accept="gmail.com" id="gmail">
+					<div class="underline"></div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="input-box">
+					<input type="password" placeholder="Enter Your Password" required="" id="password">
+					<div class="underline"></div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="input-box button">
+					<input type="submit" name="" value="Login" onclick="send()">
+					
+					</div>
+				</div>
+				
+			
+		<div>
+
+        
+      </form>
+		<div>
+				<a  href="file:///C:/Users/dayan/Desktop/LAT1/views/forget_password.html?">Forgot-Password ?</a>          
+				<a  style="margin-left:10%;" href="file:///C:/Users/dayan/Desktop/LAT1/views/register.html">Registration</a>
+		</div>
+         <a href="https://innak-crew.github.io/lat/main.html" id="mainpage"></a>
+    </div>
+    
+
+    <script>
+      function send() {
+	  var Mode = document.getElementById("mode");
+		var Msg = document.getElementById("message");
+       
+     
+        if ( document.getElementById("gmail").value == "dayanidigv954@gmail.com" && document.getElementById("password").value == "daya9524" ) {
+          document.getElementById("mainpage").click();
+		  alert("Login Success");
+        } else {
+			document.getElementById("message").style.display = "";
+			document.getElementById("message").innerHTML =  "Invalid user name and password";
+        }
+		
+	  
+      }
+	  
+</script>
+  
+
+</body>
+
+  <div id="smartybox" style="position: absolute; top: 0px; right: 0px; line-height: initial; z-index: 2147483647; width: auto; font-size: initial;"></div></html>
