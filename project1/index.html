@@ -5,48 +5,48 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	
   </head>
-  <body class="container">
+<body class="container">
     <h1 class="text-success">Add and Save Data in JSON Format</h1>
-	<div class="row">
-	<div class=" col-sm-12">
-    <form>
 	
-  <div class="form-group col-sm-4">
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-  </div>
-  <div class="form-group col-sm-4">
-    <label for="age">Age:</label>
-	    <select class="form-control" id="age" name="age">
-		<option value="">Select-age</option>
-      <option value="20-30">20-30</option>
-      <option value="30-40">30-40</option>
-      <option value="40-50">40-50</option>
-	  <option value="50-60">50-60</option>
-	  <option value="above 60">above 60</option>
-    </select>
-  </div>
-  <div class="form-group col-sm-4">
-    <label for="gender">Gender:</label>
-    <select class="form-control" id="gender" name="gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-      <option value="other">Other</option>
-    </select>
-  </div>
-  <div class="form-group col-sm-4">
-    <label for="experiences">Experiences:</label>
-	    <select class="form-control" id="experiences" name="experiences">
-		<option value="">Select-Experiences</option>
-      <option value="0-5">0-5</option>
-      <option value="5-10">5-10</option>
-      <option value="10-15">10-15</option>
-	  <option value="15-20">15-20</option>
-	  <option value="above 20">above 20</option>
-    </select>
-  </div>
-  <div class="form-group col-sm-4">
-    <label for="risk_factors">Risk Factors:</label><br>
+		
+			<form id="dataForm">
+			<div class="row">
+				<div class="form-group col-sm-4">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+				</div>
+				<div class="form-group col-sm-4">
+					<label for="age">Age:</label>
+					<select class="form-control" id="age" name="age">
+						<option value="">Select age</option>
+						<option value="20-30">20-30</option>
+						<option value="30-40">30-40</option>
+						<option value="40-50">40-50</option>
+						<option value="50-60">50-60</option>
+						<option value="above 60">above 60</option>
+					</select>
+				</div>
+				<div class="form-group col-sm-4">
+					<label for="gender">Gender:</label>
+					<select class="form-control" id="gender" name="gender">
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div class="form-group col-sm-4">
+					<label for="experiences">Experiences:</label>
+					<select class="form-control" id="experiences" name="experiences" required>
+						<option value="">Select Experiences</option>
+						<option value="0-5">0-5</option>
+						<option value="5-10">5-10</option>
+						<option value="10-15">10-15</option>
+						<option value="15-20">15-20</option>
+						<option value="above 20">above 20</option>
+					</select>
+				</div>
+				<div class="form-group col-sm-4">
+    <label for="risk_factors">Risk Factors:(VL, L, M, H, VH)</label><br>
     <input type="text" class="form-control" id="data_1" name="data_1" placeholder="Enter value of  risk factor 1"><br>
     <input type="text" class="form-control" id="data_2" name="data_2" placeholder="Enter value of  risk factor 2"><br>
     <input type="text" class="form-control" id="data_3" name="data_3" placeholder="Enter value of  risk factor 3"><br>
@@ -78,6 +78,7 @@
     <input type="text" class="form-control" id="data_29" name="data_29" placeholder="Enter value of  risk factor 29"><br>
     <input type="text" class="form-control" id="data_30" name="data_30" placeholder="Enter value of  risk factor 30"><br>
       <input class="btn btn-success" type="button" value="Save" onclick="saveData()">
+	  </div>
     </form>
     <script>
       function saveData() {
