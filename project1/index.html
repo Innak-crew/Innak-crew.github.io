@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project</title>
+    <title>>Road accident survey</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 <body class="container">
-    <h2 class="text-success">Road accident survey</h2>
+    <h2 class="text-success text-center">Road accident survey</h2>
 	
 		
-			<form id="dataForm">
+			<form id="dataForm" onsubmit="saveData()">
 			<div class="row">
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-6">
 					<label for="name">Name:</label>
 					<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
 				</div>
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-6">
 					<label for="age">Age:</label>
-					<select class="form-control" id="age" name="age">
+					<select class="form-control" id="age" name="age" required>
 						<option value="">Select age</option>
 						<option value="20-30">20-30</option>
 						<option value="30-40">30-40</option>
@@ -26,16 +26,17 @@
 						<option value="above 60">above 60</option>
 					</select>
 				</div>
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-6">
 					<label for="gender">Gender:</label>
-					<select class="form-control" id="gender" name="gender">
+					<select class="form-control" id="gender" name="gender" required>
+						<option value="">Select-Gender</option>
 						<option value="male">Male</option>
 						<option value="female">Female</option>
 						<option value="other">Other</option>
 					</select>
 				</div>
-				<div class="form-group col-sm-4">
-					<label for="experiences">Experiences:</label>
+				<div class="form-group col-sm-6">
+					<label for="experiences">Driving Experiences:</label>
 					<select class="form-control" id="experiences" name="experiences" required>
 						<option value="">Select Experiences</option>
 						<option value="0-5">0-5</option>
@@ -45,41 +46,386 @@
 						<option value="above 20">above 20</option>
 					</select>
 				</div>
-				<div class="form-group col-sm-6">
-    <label for="risk_factors">Risk Factors:(VL, L, M, H, VH)</label><br>
-    <input type="text" class="form-control" id="data_1" name="data_1" placeholder="Enter value of  risk factor 1"><br>
-    <input type="text" class="form-control" id="data_2" name="data_2" placeholder="Enter value of  risk factor 2"><br>
-    <input type="text" class="form-control" id="data_3" name="data_3" placeholder="Enter value of  risk factor 3"><br>
-    <input type="text" class="form-control" id="data_4" name="data_4" placeholder="Enter value of  risk factor 4"><br>
-    <input type="text" class="form-control" id="data_5" name="data_5" placeholder="Enter value of  risk factor 5"><br>
-    <input type="text" class="form-control" id="data_6" name="data_6" placeholder="Enter value of  risk factor 6"><br>
-    <input type="text" class="form-control" id="data_7" name="data_7" placeholder="Enter value of  risk factor 7"><br>
-    <input type="text" class="form-control" id="data_8" name="data_8" placeholder="Enter value of  risk factor 8"><br>
-    <input type="text" class="form-control" id="data_9" name="data_9" placeholder="Enter value of  risk factor 9"><br>
-    <input type="text" class="form-control" id="data_10" name="data_10" placeholder="Enter value of  risk factor 10"><br>
-    <input type="text" class="form-control" id="data_11" name="data_11" placeholder="Enter value of  risk factor 11"><br>
-    <input type="text" class="form-control" id="data_12" name="data_12" placeholder="Enter value of  risk factor 12"><br>
-    <input type="text" class="form-control" id="data_13" name="data_13" placeholder="Enter value of  risk factor 13"><br>
-    <input type="text" class="form-control" id="data_14" name="data_14" placeholder="Enter value of  risk factor 14"><br>
-    <input type="text" class="form-control" id="data_15" name="data_15" placeholder="Enter value of  risk factor 15"><br>
-    <input type="text" class="form-control" id="data_16" name="data_16" placeholder="Enter value of  risk factor 16"><br>
-	<input type="text" class="form-control" id="data_17" name="data_17" placeholder="Enter value of  risk factor 17"><br>
-    <input type="text" class="form-control" id="data_18" name="data_18" placeholder="Enter value of  risk factor 18"><br>
-    <input type="text" class="form-control" id="data_19" name="data_19" placeholder="Enter value of  risk factor 19"><br>
-    <input type="text" class="form-control" id="data_20" name="data_20" placeholder="Enter value of  risk factor 20"><br>
-    <input type="text" class="form-control" id="data_21" name="data_21" placeholder="Enter value of  risk factor 21"><br>
-    <input type="text" class="form-control" id="data_22" name="data_22" placeholder="Enter value of  risk factor 22"><br>
-    <input type="text" class="form-control" id="data_23" name="data_23" placeholder="Enter value of  risk factor 23"><br>
-    <input type="text" class="form-control" id="data_24" name="data_24" placeholder="Enter value of  risk factor 24"><br>
-    <input type="text" class="form-control" id="data_25" name="data_25" placeholder="Enter value of  risk factor 25"><br>
-    <input type="text" class="form-control" id="data_26" name="data_26" placeholder="Enter value of  risk factor 26"><br>
-    <input type="text" class="form-control" id="data_27" name="data_27" placeholder="Enter value of  risk factor 27"><br>
-    <input type="text" class="form-control" id="data_28" name="data_28" placeholder="Enter value of  risk factor 28"><br>
-    <input type="text" class="form-control" id="data_29" name="data_29" placeholder="Enter value of  risk factor 29"><br>
-    <input type="text" class="form-control" id="data_30" name="data_30" placeholder="Enter value of  risk factor 30"><br>
-      <input class="btn btn-success" type="button" value="Save" onclick="saveData()">
+				<br><hr>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>1:-</b>Accident due to drink & drive.</label>
+					<select class="form-control" id="data_1" name="data_1" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>2:-</b>Accident caused by over speeding.</label>
+					<select class="form-control" id="data_2" name="data_2" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>3:-</b>Driving strategy with improper overtaking.</label>
+					<select class="form-control" id="data_3" name="data_3" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>4:-</b>Close follow up of front vehicles.</label>
+					<select class="form-control" id="data_4" name="data_4" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>5:-</b>Drivers usage of mobile phones.</label>
+					<select class="form-control" id="data_5" name="data_5" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>6:-</b>Drivers with lack of sleep.</label>
+					<select class="form-control" id="data_6" name="data_6" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>7:-</b>Driving continuously for long time.</label>
+					<select class="form-control" id="data_7" name="data_7" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>8:-</b>Sudden braking of vehicle.</label>
+					<select class="form-control" id="data_8" name="data_8" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>9:-</b>Poor road conditions.</label>
+					<select class="form-control" id="data_9" name="data_9" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>10:-</b>Poor weather conditions.</label>
+					<select class="form-control" id="data_10" name="data_10" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>11:-</b>High illuminated head lights/extra lights.</label>
+					<select class="form-control" id="data_11" name="data_11" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>12:-</b>Interaction with passenger inside vehicle.</label>
+					<select class="form-control" id="data_12" name="data_12" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>13:-</b>Sight seeing by drivers while driving.</label>
+					<select class="form-control" id="data_13" name="data_13" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>14:-</b>Unexpected U-turns, 4 crossings.</label>
+					<select class="form-control" id="data_14" name="data_14" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>15:-</b>Unexpected animals crossings.</label>
+					<select class="form-control" id="data_15" name="data_15" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>16:-</b>Unexpected speed brakers.</label>
+					<select class="form-control" id="data_16" name="data_16"required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>17:-</b>Not well maintained vehicle.</label>
+					<select class="form-control" id="data_17" name="data_17" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>18:-</b>Defective indicators and light.</label>
+					<select class="form-control" id="data_18" name="data_18" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>19:-</b>Pedastrian crossing at non-designated areas.</label>
+					<select class="form-control" id="data_19" name="data_19" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>20:-</b>Eye vision of drivers.</label>
+					<select class="form-control" id="data_20" name="data_20" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>21:-</b>Children playing while driving.</label>
+					<select class="form-control" id="data_21" name="data_21" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>22:-</b>Unwear of seat belts.</label>
+					<select class="form-control" id="data_22" name="data_22" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>23:-</b>Improper indication of road maintenance work.</label>
+					<select class="form-control" id="data_23" name="data_23"required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>24:-</b>Overloading of vehicles.</label>
+					<select class="form-control" id="data_24" name="data_24" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>25:-</b>Accidents take place while parking.</label>
+					<select class="form-control" id="data_25" name="data_25" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>26:-</b>Accidents due to vehicle reversing.</label>
+					<select class="form-control" id="data_26" name="data_26"required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>27:-</b>Unusage of side mirrors.</label>
+					<select class="form-control" id="data_27" name="data_27" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>28:-</b>Accidents due to lane changing without proper signal.</label>
+					<select class="form-control" id="data_28" name="data_28" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>29:-</b>Usage of old vehicles.</label>
+					<select class="form-control" id="data_29" name="data_29" required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				
+				<div class="form-group col-sm-8">
+					<label for="gender"><b>30:-</b>Poor brake conditions.</label>
+					<select class="form-control" id="data_30" name="data_30"required>
+						<option value="">select</option>
+						<option value="VL">Very Low</option>
+						<option value="L">Low</option>
+						<option value="M">Medium</option>
+						<option value="H">High</option>
+						<option value="VH">Very High</option>
+						
+					</select>
+				</div>
+				<div class="col-sm-12 text-center">
+      <input class="btn btn-success" type="Submit" value="Submit" >
+	  </div>
 	  </div>
     </form>
+	<br><hr>
+	
     <script>
       function saveData() {
   var name = document.getElementById("name").value;
@@ -116,28 +462,17 @@ var experiences = document.getElementById("experiences").value;
   // For example, to save the JSON data using localStorage:
   console.log("newData", jsonData);
    // Make an HTTP POST request to the Telegram Bot API to send the data
-  var telegramBotToken = "";
-  var telegramChatId = "";
-  var telegramApiUrl = "https://api.telegram.org/bot5830822420:AAGvhHGM5UIEOKo6hUa4lPQkwoAdnW8i5eQ/sendMessage?chat_id=-839594516&text="+ encodeURIComponent(jsonData);
 
-  fetch(telegramApiUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log("Telegram Bot API response:", data);
-    alert("Data saved in JSON format and sent to Telegram Bot!");
-  })
-  .catch(error => {
-    console.error("Error sending data to Telegram Bot:", error);
-    alert("Error sending data to Telegram Bot!");
-  });
+  var telegramApiUrl = "https://api.telegram.org/bot5830822420:AAGvhHGM5UIEOKo6hUa4lPQkwoAdnW8i5eQ/sendMessage?chat_id=-839594516&text="+jsonData;
+
+  fetch(telegramApiUrl);
+  alert("Submit Successfully");
 }
 
     </script>
+	<div class="footer text-center bg-dark text-secondary">
+        <pre class="text-secondary">INNAK</pre>
+		   </div></div>
   </body>
 </div>
 </div>
