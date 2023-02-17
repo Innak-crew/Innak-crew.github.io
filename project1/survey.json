@@ -1,4 +1,4 @@
-{
+[
 			
 {"name":"Dayanidi ","age":"20-30","gender":"male","experiences":"0-5","risk_factors":{"data_1":"VL","data_2":"M","data_3":"M","data_4":"L","data_5":"VL","data_6":"M","data_7":"VL","data_8":"L","data_9":"M","data_10":"L","data_11":"VL","data_12":"L","data_13":"H","data_14":"L","data_15":"M","data_16":"VL","data_17":"VL","data_18":"M","data_19":"H","data_20":"VH","data_21":"L","data_22":"H","data_23":"VH","data_24":"L","data_25":"VL","data_26":"M","data_27":"H","data_28":"VL","data_29":"M","data_30":"M"}},
 
@@ -124,4 +124,4 @@
 
 {"name":"Sathish Kumar","age":"20-30","gender":"male","experiences":"above 20","risk_factors":{"data_1":"VL","data_2":"VL","data_3":"VL","data_4":"VL","data_5":"VL","data_6":"VL","data_7":"M","data_8":"M","data_9":"M","data_10":"M","data_11":"M","data_12":"M","data_13":"M","data_14":"M","data_15":"M","data_16":"M","data_17":"VL","data_18":"M","data_19":"M","data_20":"M","data_21":"L","data_22":"M","data_23":"VL","data_24":"VL","data_25":"VL","data_26":"VL","data_27":"VL","data_28":"VL","data_29":"VL","data_30":"VL"}}
 
-}
+]
