@@ -8,8 +8,14 @@ function Student_programsRoutes(app){
     // list Student_programs
      app.get("/listStudentPrograms", Student_programs.getAll);
     
-	// get single Student_program
-     app.get("/getStudentprogram/:id", Student_programs.findById);
+	// get  Student_program with id
+     app.get("/getStudentprogramByID/:id", Student_programs.findById);
+     
+	// get  Student_program with student id
+     app.get("/getStudentprogramByStudentID/:id", Student_programs.findBySId);
+     
+	// get  Student_program with queston id
+     app.get("/getStudentprogramByQuestionID/:id", Student_programs.findByQId);
 }
 
 

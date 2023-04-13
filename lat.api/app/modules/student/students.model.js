@@ -78,7 +78,7 @@ students.updateById = (id, students, result) => {
       result(err, null);
       return;
     }
-    if (res.length > 0) {
+    if (res.length > 1) {
       result("Email id is already used..", null);
       return;
     }

@@ -30,7 +30,6 @@ const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, () => {
   console.log(`Server is running...`);  
   console.log(`API Documentation = http://localhost:${PORT}`);
-  console.log(`API url = http://localhost:${PORT}/?apiKey=`);
   console.log(`API KEY = ${process.env.API_KEY_SECRET}`);
 });
 

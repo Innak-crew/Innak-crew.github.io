@@ -30,6 +30,7 @@
         <th>Method</th>
         <th>Endpoint</th>
         <th>Description</th>
+        <th>Key</th>
       </tr>
     </thead>
     <tbody>
@@ -37,6 +38,12 @@
         <td>POST</td>
         <td>/addStudent</td>
         <td>Add a new student.</td>
+        <td>
+          <ul>
+            <li>student_name</li>
+             <li>student_email</li>
+          </ul>
+        </td>
       </tr>
       <tr>
         <td>GET</td>
@@ -63,6 +70,17 @@
         <td>POST</td>
         <td>/addQuestion</td>
         <td>Add a new question.</td>
+        <td>
+          <ul>
+            <li>question_text</li>
+             <li>test_case
+                <ul>
+                  <li>sample_input</li>
+                  <li>sample_output</li>
+                </ul>
+             </li>
+          </ul>
+        </td>
       </tr>
       <tr>
         <td>GET</td>
@@ -88,6 +106,31 @@
         <td>POST</td>
         <td>/addStudentProgram</td>
         <td>Add a new Student Program.</td>
+        <td>
+          <ul>
+            <li>student_id</li>
+            <li>question_id</li>
+            <li>time_to_complete</li>
+            <li>program_language</li>
+            <li>attend_date</li>
+            <li>attend_time</li>
+            <li>run_count</li>
+            <li>run_time
+              <ul>
+                <li>run_time
+                  <ul>
+                  <li>line</li>
+                  <li>letters</li>
+                  <li>code</li>
+                  <li>input</li>
+                  <li>output</li>
+                  <li>testcase</li>
+                </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </td>
       </tr>
       <tr>
         <td>GET</td>
@@ -96,8 +139,18 @@
       </tr>
       <tr>
         <td>GET</td>
-        <td>/getStudentprogram/:id</td>
+        <td>/getStudentprogramByID/:id</td>
         <td>Retrieve a specific Student Program by id.</td>
+      </tr>
+      <tr>
+        <td>GET</td>
+        <td>/getStudentprogramByStudentID/:id</td>
+        <td>Retrieve a specific Student Program by Student id.</td>
+      </tr>
+      <tr>
+        <td>GET</td>
+        <td>/getStudentprogramByQuestionID/:id</td>
+        <td>Retrieve a specific Student Program by Question id.</td>
       </tr>
       </tbody>
 	<table>
