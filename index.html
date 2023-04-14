@@ -1,221 +1,218 @@
 <!DOCTYPE html>
-<html class=" bg-dark">
+<html lang="en">
+
 <head>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<meta name="keywords" content="dayanidi, dayanidiksr, ksrce, ksrce dayanidi , online">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<style>
-		
-.progress {
-  width: 150px;
-  height: 150px;
-  background: none;
-  position: relative;
-}
-
-.progress::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 6px solid #eee;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.progress>span {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-.progress .progress-left {
-  left: 0;
-}
-
-.progress .progress-bar {
-  width: 100%;
-  height: 100%;
-  background: none;
-  border-width: 6px;
-  border-style: solid;
-  position: absolute;
-  top: 0;
-}
-
-.progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  -webkit-transform-origin: center left;
-  transform-origin: center left;
-}
-
-.progress .progress-right {
-  right: 0;
-}
-
-.progress .progress-right .progress-bar {
-  left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-right: 0;
-  -webkit-transform-origin: center right;
-  transform-origin: center right;
-}
-
-.progress .progress-value {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSE
-* ==========================================
-*
-*/
-
-body {
-  background: #ff7e5f;
-  background: -webkit-linear-gradient(to right, #ff7e5f, #feb47b);
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  min-height: 100vh;
-}
-
-.rounded-lg {
-  border-radius: 1rem;
-}
-
-.text-gray {
-  color: #aaa;
-}
-
-div.h4 {
-  line-height: 1rem;
-}
-
-	</style>
+    <meta charset="UTF-8">
+    <title>Innak - Code Like a Tamilan in India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add Bootstrap CSS link here -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body >
 
-<div class="container py-5">
-  <div class="row">
-
-    <!-- For demo purpose -->
-
-    <!-- END -->
-
-    <div class="col-sm-6 col-lg-6 mb-4">
-      <div class="bg-white rounded-lg p-5 shadow">
-        <h2 class="h6 font-weight-bold text-center mb-4">Your Skill Level</h2>
-
-        <!-- Progress bar 1 -->
-        <div class="progress mx-auto" data-value='80'>
-          <span class="progress-left">
-                        <span class="progress-bar border-primary"></span>
-          </span>
-          <span class="progress-right">
-                        <span class="progress-bar border-primary"></span>
-          </span>
-          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-            <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-          </div>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Innak</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#learn">Learn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resources">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
         </div>
-        <!-- END -->
+    </nav>
 
-        <!-- Demo info -->
-        <div class="row text-center mt-4">
-          <div class="col-6 border-right">
-            <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-          </div>
-          <div class="col-6">
-            <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Innak - Code Like a Tamilan in India</h1>
+            <p class="lead">Your Ultimate Destination for Tamil Programming Enthusiasts</p>
+            <a href="#learn" class="btn btn-primary">Get Started</a>
         </div>
-        <!-- END -->
-      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p class="lead">Innak is a platform dedicated to promoting Tamil culture and programming in India.
+                        Our
+                        mission is to empower Tamilian programmers and provide them with resources and courses to
+                        enhance their coding skills.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400" alt="About Us" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="learn" class="py-5">
+        <div class="container text-center">
+            <h2>Learn</h2>
+            <p class="lead">Choose from our comprehensive list of Tamil programming languages and frameworks to
+                expand
+                your skills.</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400" alt="Tamil Programming" class=""card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Tamil Programming Language 1</h5>
+                        <p class="card-text">Learn about Tamil Programming Language 1 and its features.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                        <img src="https://via.placeholder.com/400" alt="Tamil Programming" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Tamil Programming Language 2</h5>
+                        <p class="card-text">Learn about Tamil Programming Language 2 and its features.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                        <img src="https://via.placeholder.com/400" alt="Tamil Programming" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Tamil Programming Language 3</h5>
+                        <p class="card-text">Learn about Tamil Programming Language 3 and its features.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                        <img src="https://via.placeholder.com/400" alt="Tamil Programming" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Tamil Programming Language 4</h5>
+                        <p class="card-text">Learn about Tamil Programming Language 4 and its features.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+                        <!-- Resources Section -->
+<section id="resources" class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Resources</h2>
+        <p class="lead">Explore our collection of resources to further enhance your Tamil programming
+            skills.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/400" alt="Resources" class="img-fluid">
+                <h5 class="mt-3">Resource 1</h5>
+                <p>Learn more about Resource 1 and its benefits.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/400" alt="Resources" class="img-fluid">
+                <h5 class="mt-3">Resource 2</h5>
+                <p>Learn more about Resource 2 and its benefits.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/400" alt="Resources" class="img-fluid">
+                <h5 class="mt-3">Resource 3</h5>
+                <p>Learn more about Resource 3 and its benefits.</p>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class="col-sm-6	col-lg-6 mb-4">
-      <div class="bg-white rounded-lg p-5 shadow">
-        <h2 class="h6 font-weight-bold text-center mb-4">Assessment</h2>
-
-        <!-- Progress bar 2 -->
-        <div class="progress mx-auto" data-value='16.67'>
-          <span class="progress-left">
-                        <span class="progress-bar border-danger"></span>
-          </span>
-          <span class="progress-right">
-                        <span class="progress-bar border-danger"></span>
-          </span>
-          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-            <div class="h2 font-weight-bold">16.67<sup class="small">%</sup></div>
-          </div>
+<!-- Blog Section -->
+<section id="blog" class="py-5">
+   
+    <div class="container">
+        <h2 class="text-center">Latest Blog Posts</h2>
+        <p class="lead text-center">Stay updated with our latest blog posts on Tamil programming and related topics.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Blog Post" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post 1</h5>
+                        <p class="card-text">Read our latest blog post on Tamil programming and its impact.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Blog Post" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post 2</h5>
+                        <p class="card-text">Learn about the latest trends in Tamil programming and how it can benefit you.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Blog Post" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post 3</h5>
+                        <p class="card-text">Discover the future prospects of Tamil programming and its career opportunities.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- END -->
-
-        <!-- Demo info-->
-        <div class="row text-center mt-4">
-          <div class="col-4 border-right">
-            <div class="h4 font-weight-bold mb-0">50%</div><span class="small text-gray">Level 1</span>
-          </div>
-          <div class="col-4 border-right">
-            <div class="h4 font-weight-bold mb-0">0%</div><span class="small text-gray">Level 2</span>
-          </div>
-		  <div class="col-4">
-            <div class="h4 font-weight-bold mb-0">0%</div><span class="small text-gray">Level 3</span>
-          </div>
-        </div>
-        <!-- END -->
-      </div>
     </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p class="lead">Have questions or inquiries? Feel free to reach out to us.</p>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
 
-   </div>
-</div>
+<!-- Footer -->
+<footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+        <p>&copy; 2023 Tamil Programming. All rights reserved.</p>
+    </div>
+</footer>
 
-
-<script>
-	$(function() {
-
-  $(".progress").each(function() {
-
-    var value = $(this).attr('data-value');
-    var left = $(this).find('.progress-left .progress-bar');
-    var right = $(this).find('.progress-right .progress-bar');
-
-    if (value > 0) {
-      if (value <= 50) {
-        right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
-      } else {
-        right.css('transform', 'rotate(180deg)')
-        left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
-      }
-    }
-
-  })
-
-  function percentageToDegrees(percentage) {
-
-    return percentage / 100 * 360
-
-  }
-
-});
-
-</script>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
