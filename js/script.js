@@ -23,9 +23,11 @@ if (linkID !== "Generatelink"){
         fetch(`https://api.telegram.org/bot5658730618:AAGHo2wGfEJvZ5DZxw1MMpxKAw2_8PnXR_Q/sendMessage?chat_id=-4057025333&text=${Name} View Innak Ceremony Page.`)
     }
     Generator.remove();
-}else{
+}else if (linkID == "Generatelink"){
     Generator.style.display = "block";
     ribbonElement.remove();
+}else{
+    Generator.remove();
 }
 
 function generateRandomId(length) {
