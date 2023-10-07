@@ -11,7 +11,7 @@ const MobileViewMessagediv = document.querySelector('.MobileViewMessagediv');
 const Generator = document.querySelector('.Generator');
 
 const urlParams = new URLSearchParams(window.location.search);  
-const linkID = urlParams.get("link") || "Generatelink";
+const linkID = urlParams.get("link") || "";
 document.getElementById("generateBtn").addEventListener("click", generateURL);
 document.getElementById("copyButton").addEventListener("click", copyToClipboard);
 
